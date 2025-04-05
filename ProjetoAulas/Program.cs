@@ -165,7 +165,7 @@ class Program
         var nome1 = queue.Dequeue();//Segunda execucao
         Console.WriteLine(nome1);
 
-     */
+     
 
         //Stack
 
@@ -184,5 +184,83 @@ class Program
         {
             Console.WriteLine(item);
         }
+
+        
+        // If else
+
+        var diaDaSemana = 0;
+        var diaDeTrabalho = false;
+
+        if (diaDaSemana == 0 && diaDeTrabalho)
+        {
+            Console.WriteLine("Hoje é domingo");
+
+        }
+        else 
+        {
+            Console.WriteLine("Hoje não é domingo");
+        }
+
+        
+        //Swich
+
+        var diaDaSemana = 0;
+       
+
+        switch (diaDaSemana <1)
+        {
+            case true:
+            Console.WriteLine("Hoje é domingo");
+                break;
+            
+            case false:
+            Console.WriteLine("Hoje não é domingo");
+                break;
+        }
+
+      
+
+        //for
+
+        var lista = new List<string>() {"Anna", "Curso", "Csharp"};
+
+        for (int i = 0; i < lista.Count; i++) 
+        {
+            var nome = lista[i];
+
+            Console.WriteLine(nome);
+            
+        }
+
+       
+
+        //foreach
+        var lista = new List<string>() { "Anna", "Curso", "Csharp" };
+
+        foreach (var item in lista)
+        { 
+            Console.WriteLine(item);
+        }
+
+           */
+
+        var i = 0;
+
+        while (i < 10) 
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+
+        var j = 0;
+
+        do
+        {
+
+            Console.WriteLine(j);
+            j++;
+        }
+        while (j < 2); 
+
     }
 }
