@@ -1,13 +1,19 @@
+using Cadastro;
+
 public class Program
 {
 
     static void Main(string[] args)
     {
-
-        // AulaClasse();
-        AulaHeranca();
-        AulaHeranca2();
+        //AulaClasse();
+        //AulaHeranca();
+        //AulaHeranca2();
+        //AulaClasseSelada()
+        // AulaClasseAbstrata()
+        AulaRecord();
     }
+
+
 
     private static void AulaClasse()
     {
@@ -49,12 +55,77 @@ public class Program
         funcionario.ImprimirMatricula();
         funcionario.ImprimirDados();
         funcionario.ImprimirCPF();
-        
-
-
 
     }
 
+    public static void AulaClasseSelada()
+    {
+
+        var configuracao = new Cadastro.Configuracao();
+        configuracao.Host = "localhost";
+        configuracao.Porta = "25";
+
+        var configuracao2 = new Cadastro.Configuracao { Host = "localhost", Porta = "25" };
+
+        Console.WriteLine(configuracao2.Host);
+    }
+
+
+    public static void AulaClasseAbstrata()
+    {
+        var animal = new Cadastro.Cachorro();
+        animal.Nome = "Bolinha";
+        animal.ImprimirDados();
+    }
+
+    public static void AulaRecord()
+    {
+        var curso1 = new Cadastro.Curso { Id = 1, Descricao = "Curso" };
+        var curso2 = new Cadastro.Curso { Id = 1, Descricao = "Curso" };
+
+        //Console.WriteLine(curso1.Equals(curso2));
+
+        Console.WriteLine(curso1 == curso2);
+    }
+    public static void AulaRecord1()
+    {
+        var curso1 = new Cadastro.Curso { Id = 1, Descricao = "Curso" };
+        var curso2 = new Cadastro.Curso { Id = 1, Descricao = "Curso" };
+
+        //Console.WriteLine(curso1.Equals(curso2));
+
+        Console.WriteLine(curso1 == curso2);
+    }
+
+
+    public static void AulaRecord2()
+    {
+        var curso1 = new Cadastro.Curso1(1, "Curso");
+        var curso2 = new Cadastro.Curso1(1, "Curso");
+
+
+        Console.WriteLine(curso1 == curso2);
+    }
+
+    public static void AulaRecord3()
+    {
+        // var curso1 = new Cadastro.CursoTeste { Id = 1, Descricao = "Curso" };
+        //   var curso2 = curso1;
+        //    curso2.Descricao = "Teste";
+        // var curso2 = new Cadastro.CursoTeste();
+        //curso2.Id = curso1.Id;
+        //curso2.Descricao = "Nova Descricao";
+
+        var curso1 = new Cadastro.Curso1(1, "Curso");
+        var curso2 = curso1 with { Descricao = "Curso 2" };
+
+
+        Console.WriteLine(curso1.Descricao);
+        Console.WriteLine(curso2.Descricao);
+    }
+
+
 }
 
-        
+
+
