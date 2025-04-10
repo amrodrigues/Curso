@@ -10,9 +10,18 @@ public class Program
         //AulaHeranca2();
         //AulaClasseSelada()
         // AulaClasseAbstrata()
-        AulaRecord();
+        //AulaRecord();
+        // AulaInterface();
+        Conversores();
+        
     }
 
+    public static void Conversores()
+    {
+        var conversores = new Conversores.Conversor();
+        conversores.ConvertAndParse();
+        conversores.AulaTryParse();
+    }
 
 
     private static void AulaClasse()
@@ -124,6 +133,16 @@ public class Program
         Console.WriteLine(curso2.Descricao);
     }
 
+    public static void AulaInterface()
+    {
+        var notificacaoCliente = new Cadastro.NotificacaoCliente();
+        notificacaoCliente.Notificar();
+        notificacaoCliente.NotificarOutros();
+
+        Cadastro.INotificacao notificacao = new Cadastro.NotificacaoFuncionario();
+        notificacao.Notificar();
+        
+    }
 
 }
 
