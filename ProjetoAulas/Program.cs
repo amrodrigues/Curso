@@ -1,4 +1,5 @@
 using Cadastro;
+using Modulo10;
 
 public class Program
 {
@@ -12,9 +13,41 @@ public class Program
         // AulaClasseAbstrata()
         //AulaRecord();
         // AulaInterface();
-        Conversores();
-        
+        // Conversores();
+        //TrabalhandoComStrings();
+        TrabalhandocomDatas();
+
+
     }
+    public static void TrabalhandocomDatas()
+    {
+        var trabalhandocomDatas = new Modulo11.TrabalahandoComDatas();
+        //trabalhandocomDatas.AulaDatetime();
+        // trabalhandocomDatas.AulaSubitrairDatas();
+        //trabalhandocomDatas.AulaAdicionandoDiasMesAno();
+        //trabalhandocomDatas.AulaAdicionandoHoraMinutoSegundos();
+       // trabalhandocomDatas.AulaDiadaSemana();
+        //trabalhandocomDatas.AulaDateOnly();
+        trabalhandocomDatas.AulaTimeOnly();
+    }
+
+
+    private static void TrabalhandoComStrings()
+    {
+        var trabalhandoComStrings = new Modulo10.TrabalhandocomStrings();
+        //trabalhandoComStrings.ConverterParaLetrasMinusculas();    
+        //trabalhandoComStrings.ConverterParaLetrasMaiusculas();
+        //trabalhandoComStrings.AulaSubstrings();
+        // trabalhandoComStrings.AulaRange();
+        // trabalhandoComStrings.AulaContains();   
+        // trabalhandoComStrings.AulaTrim();
+        // trabalhandoComStrings.AulaStart();
+        //  trabalhandoComStrings.AulaReplace();
+        //trabalhandoComStrings.AulaLength();
+    }
+
+    
+ 
 
     public static void Conversores()
     {
