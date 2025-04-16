@@ -15,10 +15,27 @@ public class Program
         // AulaInterface();
         // Conversores();
         //TrabalhandoComStrings();
-        TrabalhandocomDatas();
-
+        // TrabalhandocomDatas();
+        // TrabalhandoComExcecoes();
+        TrabalhandoComArquivos();
 
     }
+
+
+    public static void TrabalhandoComArquivos()
+    {
+        var trabalhandoComArquivos = new Modulo13.TrabalhandoComArquivos();
+        // trabalhandoComArquivos.AulaCriandoArquivo();
+        //trabalhandoComArquivos.AulaLendoArquivo();
+        trabalhandoComArquivos.AulaExcluindoArquivo();
+    }
+    public static void TrabalhandoComExcecoes()
+    {
+        var trabalhandoComExececoes = new Modulo12.TrabalhandoComExececoes();
+        trabalhandoComExececoes.AulaGerandoException();
+
+    }
+
     public static void TrabalhandocomDatas()
     {
         var trabalhandocomDatas = new Modulo11.TrabalahandoComDatas();
