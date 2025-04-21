@@ -17,10 +17,22 @@ public class Program
         //TrabalhandoComStrings();
         // TrabalhandocomDatas();
         // TrabalhandoComExcecoes();
-        TrabalhandoComArquivos();
+        //TrabalhandoComArquivos();
+        TrabalhandoComLinq();
 
     }
 
+    public static void TrabalhandoComLinq()
+    {
+        var linq = new Modulo14.TrabalahndocomLInq();
+        // linq.AulaWhere();
+        //linq.AulaOrdenacao();
+        //linq.AulaTake();
+       // linq.AulaCount();
+      
+       linq.AulaFristOrDefault();
+
+    }
 
     public static void TrabalhandoComArquivos()
     {
